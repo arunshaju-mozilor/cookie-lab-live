@@ -13,6 +13,7 @@ wired to a **Basic-plan** site. Dark violet theme; every page shows a `QA1 · Ba
 | `about.html` | About page for multi-page navigation tests |
 | `privacy-policy.html` | Privacy policy (linked from banner) |
 | `cookie-policy.html` | Renders the CookieYes cookie policy for the same QA1 account |
+| `terms-and-conditions.html` | Terms and Conditions page — heading only, blank body |
 
 ## CookieYes script
 
