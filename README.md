@@ -17,8 +17,15 @@ Dark violet theme; every page shows a `Live` tag in the nav.
 
 ## CookieYes script
 
-No CookieYes script is installed. To test a banner, add the account's `<script id="cookieyes" ...>`
-tag to the `<head>` of each page (and the cookie-policy script to `cookie-policy.html`).
+`index.html` loads the Live banner in `<head>`:
+
+```html
+<script id="cookieyes" type="text/javascript"
+  src="https://cdn-cookieyes.com/client_data/2a580c28b7926400613c8dfd31c73acf/script.js">
+</script>
+```
+
+The other pages have no CookieYes script installed.
 
 ## Hosting
 
