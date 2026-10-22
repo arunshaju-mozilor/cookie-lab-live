@@ -1,8 +1,9 @@
-# Cookie Lab
+# Cookie Lab — QA1 Basic
 
-A minimal static site for CookieYes banner QA testing, on a dark violet theme.
+A minimal static site for CookieYes banner QA testing against the **QA1** environment,
+wired to a **Basic-plan** site. Dark violet theme; every page shows a `QA1 · Basic` tag in the nav.
 
-**Live:** https://arunshaju-mozilor.github.io/cookie-lab/
+**Live:** https://arunshaju-mozilor.github.io/cookie-lab-qa1-basic/
 
 ## Pages
 
@@ -11,23 +12,25 @@ A minimal static site for CookieYes banner QA testing, on a dark violet theme.
 | `index.html` | **Cookie Lab** home page — loads real third-party trackers and sets cookies in every category on load, with a live consent-status dashboard |
 | `about.html` | About page for multi-page navigation tests |
 | `privacy-policy.html` | Privacy policy (linked from banner) |
+| `cookie-policy.html` | Renders the CookieYes cookie policy for the same QA1 account |
 
-## Adding the CookieYes script
+## CookieYes script
 
-In each HTML file, uncomment and replace the script tag in `<head>`:
+Every page loads the QA1 Basic banner in `<head>`:
 
 ```html
 <script id="cookieyes" type="text/javascript"
-  src="https://cdn-cookieyes.com/client_data/YOUR_CLIENT_ID/script.js">
+  src="https://cdn-mojoview.uk/client_data/3ff46f3c60ae20a91dd55a0cce554982/script.js">
 </script>
 ```
 
-Get `YOUR_CLIENT_ID` from: CookieYes Dashboard → Settings → Installation.
+`cookie-policy.html` also loads `.../client_data/3ff46f3c60ae20a91dd55a0cce554982/cookie-policy/script.js`.
+To switch accounts, replace the client ID in all four HTML files.
 
 ## Hosting
 
-GitHub Pages is already configured on this repo: **Deploy from a branch → `main` → `/` (root)**.
+GitHub Pages: **Deploy from a branch → `main` → `/` (root)**.
 Pushing to `main` redeploys the site within a minute or two.
 
-Use https://arunshaju-mozilor.github.io/cookie-lab/ as the domain when adding a website
-in the CookieYes dashboard.
+Use https://arunshaju-mozilor.github.io/cookie-lab-qa1-basic/ as the domain when adding the website
+in the QA1 CookieYes dashboard.

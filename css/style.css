@@ -240,3 +240,14 @@ footer a:hover {
   .card { padding: 1.35rem; }
   .page-content h1 { font-size: 1.6rem; }
 }
+
+.env-tag {
+  margin-left: 0.4rem;
+  padding: 0.1rem 0.45rem;
+  border: 1px solid var(--violet);
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
